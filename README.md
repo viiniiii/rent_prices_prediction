@@ -1,6 +1,3 @@
-# rent_prices_prediction
-Collecting and cleaning data of rent listings in Berlin. Then training and testing different models to make the best predictions of rent prices. 
-
 ## Project description & motivation
 The goal of this project is to create the most suitable ML model to predict rent prices (Kaltmiete) in Berlin. Since Warmmiete (rent that includes other costs like electricity, heating, etc) isn’t available in all listings, it was more suitable to use Kaltmiete instead. 
 In this case, the best place to find the data for our dataset is real estate and apartment-search websites like Immowelt, WG-Gesucht, Immosuchmaschine, Kleineanzeigen, etc.
@@ -11,8 +8,8 @@ Since the website doesn’t provide any APIs to access the data, it was necessar
 The scraped data is publicly available, and this project has no commercial application, but rather serves as a personal project only for learning and demonstration purposes. 
 Content protected by copyright like articles and images were not scraped. 
 Security bypassing mechanisms and other harmful and forbidden mechanisms were not implemented.
--The link that we used is “https://www.immowelt.de/classified-search?distributionTypes=Rent&estateTypes=House,Apartment&locations=AD08DE8634&page={pageNumber}”, which according to the robots.txt file we are allowed to access this link via web scrapers.
--Also to be respectful and not to flood the website with traffic, commands like time.sleep() were used to slow down the scraping script.
+- The link that we used is “https://www.immowelt.de/classified-search?distributionTypes=Rent&estateTypes=House,Apartment&locations=AD08DE8634&page={pageNumber}”, which according to the robots.txt file we are allowed to access this link via web scrapers.
+- Also to be respectful and not to flood the website with traffic, commands like time.sleep() were used to slow down the scraping script.
 
 ## Data collection
 When it comes to the number of samples that we are going to scrape for a regression task, I would suggest at least 20,000 samples as a sufficient amount to collect, considering that we might lose up to 40% of our dataset during data preparation, so 12,000 samples would be enough to build a decent model.
