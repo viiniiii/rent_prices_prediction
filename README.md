@@ -1,7 +1,8 @@
 ## Project description & motivation
-The goal of this project is to create the most suitable ML model to predict rent prices (Kaltmiete) in Berlin. Since Warmmiete (rent that includes other costs like electricity, heating, etc) isn’t available in all listings, it was more suitable to use Kaltmiete instead. 
-In this case, the best place to find the data for our dataset is real estate and apartment-search websites like Immowelt, WG-Gesucht, Immosuchmaschine, Kleineanzeigen, etc.
-For this project, I decided to use only Immowelt, since it included more data overall per listing, therefore more features can be included in the dataset. Also, it has a lot of new listings per day, so it is sufficient to build a proper dataset with enough samples if we gather data regularly.
+The goal of this project is to develop a machine learning model that uses real estate listing data to predict Berlin apartment rent prices (Kaltmiete).
+Kaltmiete was chosen as the goal variable to ensure an accurate dataset because Warmmiete (rent including utilities) is not always available across listings.
+The information was gathered by collecting publicly accessible listings from Immowelt, a significant German real estate marketplace. This source was chosen because it provides a large number of listings and rich property features such as apartment size, number of rooms, amenities, and building characteristics.
+The data collected makes it possible to create and evaluate machine learning models that predict rental costs based on property characteristics.
 
 ## Legal & ethical considerations
 Since the website doesn’t provide any APIs to access the data, it was necessary to write a script to scrape the data. While writing the script every aspect of legal considerations in Germany, such as GDPR, was considered. Personal data like the phone number and other data of the person or the company who posted the listing weren’t scraped. These data are sensitive and aren’t needed for the model. A derived variable, such as whether the poster is the owner or a real estate agency might have had some correlation with the price, but it would require sensitive data, and it is also hard to determine. 
