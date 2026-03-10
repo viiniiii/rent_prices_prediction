@@ -6,14 +6,14 @@ The data collected makes it possible to create and evaluate machine learning mod
 
 ## Key Highlights / Results
 ### Dataset
-•	Total scraped listings: 22687 
-•	Listings after cleaning: 15601 
-•	Data source: Immowelt 
-•	Scraping period: 28/12/2025 – 31/01/2026 
-•	Number of raw features collected: 29 
-•	Number of final model features: 22 
-•	Missing data handled using: Median 
-•	Duplicate listings removed: Yes – similarity method 
+•	Total scraped listings: 22687  
+•	Listings after cleaning: 15601  
+•	Data source: Immowelt  
+•	Scraping period: 28/12/2025 – 31/01/2026  
+•	Number of raw features collected: 29  
+•	Number of final model features: 22  
+•	Missing data handled using: Median  
+•	Duplicate listings removed: Yes – similarity method  
 ### Feature Engineering
 •	Categorical encoding methods: ONE HOT ENCODING 
 •	Numerical preprocessing: STANDARD SCALING 
