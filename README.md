@@ -44,15 +44,10 @@ Evaluation metrics used:
 •	RMSE (Root Mean Squared Error)  
 •	R² Score  
 Model	           |  RMSE	|   R²  
------------------|--------|-------  
 XGBoost	         | 190.97 | 0.9323      
------------------|--------|-------  
 Random Forest	   | 214.55 | 0.9146 
---------------------------|-------  
 Neural Network	 | 222.38	| 0.9082 
---------------------------|--------  
 SVR	             | 312.89	| 0.8184    
---------------------------|--------  
 Ridge Regression | 334.63	| 0.7923  
 
 ### Model Interpretation
