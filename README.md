@@ -15,35 +15,35 @@ The data collected makes it possible to create and evaluate machine learning mod
 •	Missing data handled using: Median  
 •	Duplicate listings removed: Yes – similarity method  
 ### Feature Engineering
-•	Categorical encoding methods: ONE HOT ENCODING 
-•	Numerical preprocessing: STANDARD SCALING 
-•	Final training dataset shape: (15601, 93)  
+•	Categorical encoding methods: ONE HOT ENCODING  
+•	Numerical preprocessing: STANDARD SCALING  
+•	Final training dataset shape: (15601, 93)   
 ### Exploratory Data Analysis (EDA) - Key findings from exploratory analysis:
-•	Rent distribution is RIGHT-SKEWED 
-•	Strong correlation between apartment size (sqm) and rent price 
-•	Features with the highest correlation to rent: 
-o	area of apartment m2 
-o	number of rooms 
-o	year of construction 
+•	Rent distribution is RIGHT-SKEWED  
+•	Strong correlation between apartment size (sqm) and rent price  
+•	Features with the highest correlation to rent:  
+o	area of apartment m2  
+o	number of rooms  
+o	year of construction  
 •	Amenities such as BALCONY / ELEVATOR / PARKING tend to increase rent prices. 
 ### Machine Learning Models
-The following regression models were implemented and compared: 
-•	Linear Regression 
-•	Ridge Regression 
-•	KNeighborsRegressor 
-•	Support Vector Regressor 
-•	Random Forest Regressor 
-•	Gradient Boosting 
-•	XGBoost 
-•	Neural Network 
-Training strategy:
-•	Cross-validation: 5-FOLD
-•	Hyperparameter tuning: GRID SEARCH
+The following regression models were implemented and compared:  
+•	Linear Regression  
+•	Ridge Regression  
+•	KNeighborsRegressor  
+•	Support Vector Regressor  
+•	Random Forest Regressor  
+•	Gradient Boosting  
+•	XGBoost  
+•	Neural Network  
+Training strategy:  
+•	Cross-validation: 5-FOLD  
+•	Hyperparameter tuning: GRID SEARCH  
 ### Model Performance of 5 best models
-Evaluation metrics used:
-•	RMSE (Root Mean Squared Error)
-•	R² Score
-Model	RMSE	R²
+Evaluation metrics used:  
+•	RMSE (Root Mean Squared Error)  
+•	R² Score  
+Model	RMSE	R²  
 XGBoost	190.97	0.9323
 Random Forest	214.55	0.9146
 Neural Network	222.38	0.9082
