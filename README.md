@@ -111,10 +111,12 @@ The repository includes visualizations such as:
 •	SHAP summary plot  
 
 <p align="center">
-  <img src="graphs/graph1.png" width="49%">
-  <img src="graphs/graph2.png" width="49%">
+  <img src="graphs/graph1.png" width="49%" alt="District distribution histogram">
+  <img src="graphs/graph2.png" width="49%" alt="Rent price distribution histogram">
 </p>
-![Relation of area and number of rooms to price](graphs/graph3.png)
+<p align="center">
+ <img src="graphs/graph3.png" width="49%" alt="Relation of area and number of rooms to price"> 
+</p>  
 ![Distribution of prices - Berlin split into 4](graphs/graph4.png)
 ![Distribution of prices - Berlin split into West and East](graphs/graph5.png)
 ![Distribution of prices per square meter - Berlin split into West and East](graphs/graph6.png)
