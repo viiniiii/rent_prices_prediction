@@ -111,8 +111,8 @@ The repository includes visualizations such as:
 •	SHAP summary plot  
 
 <p align="center">
-  <img src="graphs/graph1.png" width="50%">
-  <img src="graphs/graph2.png" width="50%">
+  <img src="graphs/graph1.png" width="49%">
+  <img src="graphs/graph2.png" width="49%">
 </p>
 ![Relation of area and number of rooms to price](graphs/graph3.png)
 ![Distribution of prices - Berlin split into 4](graphs/graph4.png)
