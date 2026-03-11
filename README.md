@@ -119,7 +119,7 @@ The repository includes visualizations such as:
  <img src="graphs/graph3.png" width="80%" alt="Relation of area and number of rooms to price"> 
 </p>  
 
-## Price Distribution by Area
+<h2 align="center"> Price Distribution by Area </h2>
 
 <table style="width:100%; border:none;">
   <tr>
@@ -137,19 +137,19 @@ The repository includes visualizations such as:
   </tr>
 </table>
 
-## Historical & Geographic Analysis
+<h2 align="center"> Historical & Geographic Analysis </h2>
 
 ![Distribution of apartments built during Communism - West vs East](graphs/graph7.png)
 ![Distribution of prices - Berlin split based on distance to the center](graphs/graph8.png)
 
-## Correlation Analysis
+<h2 align="center"> Correlation Analysis </h2>
 
 <p align="center">
   <img src="graphs/graph9.png" width="49%" alt="Matrix of correlation between variables">
   <img src="graphs/graph10.png" width="49%" alt="Matrix of correlation between variables">
 </p>
 
-## Model Insights
+<h2 align="center"> Model Insights </h2>
 
 <p align="center">
   <img src="graphs/graph11.png" width="49%" alt="Feature Impornace">
