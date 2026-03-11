@@ -137,8 +137,11 @@ The repository includes visualizations such as:
 
 ![Distribution of apartments built during Communism - West vs East](graphs/graph7.png)
 ![Distribution of prices - Berlin split based on distance to the center](graphs/graph8.png)
-![Matrix of correlation between variables](graphs/graph9.png)
-![Matrix of correlation between variables](graphs/graph10.png)
+
+<p align="center">
+  <img src="graphs/graph9.png" width="49%" alt="Matrix of correlation between variables">
+  <img src="graphs/graph10.png" width="49%" alt="Matrix of correlation between variables">
+</p>
 
 <p align="center">
   <img src="graphs/graph11.png" width="49%" alt="Feature Impornace">
