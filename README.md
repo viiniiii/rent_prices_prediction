@@ -115,7 +115,7 @@ The repository includes visualizations such as:
   <img src="graphs/graph2.png" width="49%" alt="Rent price distribution histogram">
 </p>
 <p align="center">
- <img src="graphs/graph3.png" width="49%" alt="Relation of area and number of rooms to price"> 
+ <img src="graphs/graph3.png" width="80%" alt="Relation of area and number of rooms to price"> 
 </p>  
 ![Distribution of prices - Berlin split into 4](graphs/graph4.png)
 ![Distribution of prices - Berlin split into West and East](graphs/graph5.png)
