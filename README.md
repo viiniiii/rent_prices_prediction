@@ -110,6 +110,8 @@ The repository includes visualizations such as:
 •	Feature importance ranking  
 •	SHAP summary plot  
 
+![Rent price distribution histogram](graphs/graph1.png)
+
 ## Legal & ethical considerations
 Since the website doesn’t provide any APIs to access the data, it was necessary to write a script to scrape the data. While writing the script every aspect of legal considerations in Germany, such as GDPR, was considered. Personal data like the phone number and other data of the person or the company who posted the listing weren’t scraped. These data are sensitive and aren’t needed for the model. A derived variable, such as whether the poster is the owner or a real estate agency might have had some correlation with the price, but it would require sensitive data, and it is also hard to determine. 
 The scraped data is publicly available, and this project has no commercial application, but rather serves as a personal project only for learning and demonstration purposes. 
