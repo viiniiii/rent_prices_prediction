@@ -118,16 +118,10 @@ The repository includes visualizations such as:
  <img src="graphs/graph3.png" width="80%" alt="Relation of area and number of rooms to price"> 
 </p>  
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px;">
-  <div style="grid-row: 1 / 3;">
-    <img src="graphs/graph4.png" alt="Distribution of prices - Berlin split into four areas" width="100%">
-  </div>
-  <div>
-    <img src="graphs/graph5.png" alt="Distribution of prices - Berlin split into West and East" width="100%">
-  </div>
-  <div>
-    <img src="graphs/graph6.png" alt="Distribution of prices per square meter - Berlin split into West and East" width="100%">
-  </div>
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 8px;">
+  <img src="graphs/graph4.png" alt="Distribution of prices - Berlin split into four areas" style="width:100%; grid-row: span 2;">
+  <img src="graphs/graph5.png" alt="Distribution of prices - Berlin split into West and East" style="width:100%;">
+  <img src="graphs/graph6.png" alt="Distribution of prices per square meter - Berlin split into West and East" style="width:100%;">
 </div>
 
 ![Distribution of apartments built during Communism - West vs East](graphs/graph7.png)
