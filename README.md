@@ -110,8 +110,10 @@ The repository includes visualizations such as:
 •	Feature importance ranking  
 •	SHAP summary plot  
 
-![District distribution histogram](graphs/graph1.png)
-![Rent price distribution histogram](graphs/graph2.png)
+<p align="center">
+  <img src="graphs/graph1.png" width="45%">
+  <img src="graphs/graph2.png" width="45%">
+</p>
 ![Relation of area and number of rooms to price](graphs/graph3.png)
 ![Distribution of prices - Berlin split into 4](graphs/graph4.png)
 ![Distribution of prices - Berlin split into West and East](graphs/graph5.png)
