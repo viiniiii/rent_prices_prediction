@@ -114,6 +114,7 @@ The repository includes visualizations such as:
   <img src="graphs/graph1.png" width="49%" alt="District distribution histogram">
   <img src="graphs/graph2.png" width="49%" alt="Rent price distribution histogram">
 </p>
+
 <p align="center">
  <img src="graphs/graph3.png" width="80%" alt="Relation of area and number of rooms to price"> 
 </p>  
@@ -138,8 +139,11 @@ The repository includes visualizations such as:
 ![Distribution of prices - Berlin split based on distance to the center](graphs/graph8.png)
 ![Matrix of correlation between variables](graphs/graph9.png)
 ![Matrix of correlation between variables](graphs/graph10.png)
-![Feature Impornace](graphs/graph11.png)
-![SHAP Values - Waterfall method Graph](graphs/graph12.png)
+
+<p align="center">
+  <img src="graphs/graph11.png" width="49%" alt="Feature Impornace">
+  <img src="graphs/graph12.png" width="49%" alt="SHAP Values - Waterfall method Graph">
+</p>
 
 ## Legal & ethical considerations
 Since the website doesn’t provide any APIs to access the data, it was necessary to write a script to scrape the data. While writing the script every aspect of legal considerations in Germany, such as GDPR, was considered. Personal data like the phone number and other data of the person or the company who posted the listing weren’t scraped. These data are sensitive and aren’t needed for the model. A derived variable, such as whether the poster is the owner or a real estate agency might have had some correlation with the price, but it would require sensitive data, and it is also hard to determine. 
