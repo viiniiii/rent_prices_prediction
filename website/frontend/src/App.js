@@ -65,8 +65,8 @@ function App() {
         year_built: parseInt(formData.year_built),
         district: formData.district,
       };
-
-      const response = await fetch("http://localhost:5000/predict", {
+      
+      const response = await fetch("https://model-hosting-2u0x.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
