@@ -4,6 +4,9 @@ Kaltmiete was chosen as the goal variable to ensure an accurate dataset because 
 The information was gathered by collecting publicly accessible listings from Immowelt, a significant German real estate marketplace. This source was chosen because it provides a large number of listings and rich property features such as apartment size, number of rooms, amenities, and building characteristics.
 The data collected makes it possible to create and evaluate machine learning models that predict rental costs based on property characteristics.
 
+## Website
+https://rentpricesprediction.vercel.app/
+
 ## Key Highlights / Results
 ### Dataset
 •	Total scraped listings: 22687  
