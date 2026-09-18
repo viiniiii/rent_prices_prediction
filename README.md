@@ -162,20 +162,34 @@ The repository includes visualizations such as:
 <h2 align="center"> Feature Analysis Analysis </h2>
 
 <p align="center">
-  <img src="graphs/readme_graphs/price_distribution.png" width="49%" alt="District distribution histogram">
-  <img src="graphs/readme_graphs/district_distribution.png" width="49%" alt="Rent price distribution histogram">
+  <img src="graphs/readme_graphs/price_distribution.png" width="49%" alt="Rent price distribution histogram">
+  <img src="graphs/readme_graphs/district_distribution.png" width="49%" alt="District distribution histogram">
 </p>
 
 <p align="center">
-  <img src="graphs/readme_graphs/year_built_count.png" width="49%" alt="District distribution histogram">
-  <img src="graphs/readme_graphs/number_of_floors.png" width="49%" alt="Rent price distribution histogram">
+  <img src="graphs/readme_graphs/year_built_count.png" width="49%" alt="Year built cumulative graph">
+  <img src="graphs/readme_graphs/number_of_floors.png" width="49%" alt="Number of floor distribution treemap">
+</p>
+
+<h2 align="center"> Relation of different features with rent prices </h2>
+
+<p align="center">
+  <img src="graphs/readme_graphs/area_and_price.png" width="49%" alt="Relation of area and price">
+  <img src="graphs/readme_graphs/floor_number_and_price.png" width="49%" alt="Floor number and price">
 </p>
 
 <p align="center">
- <img src="graphs/graph3.png" width="80%" alt="Relation of area and number of rooms to price">
+ <img src="graphs/readme_graphs/category_vs_price_2.png" width="80%" alt="Feature exploration">
 </p>
 
-<h2 align="center"> Price Distribution by Area </h2>
+<p align="center">
+  <img src="graphs/readme_graphs/district_vs_price.png" width="49%" alt="Price based on different geographical divisions">
+  <img src="graphs/readme_graphs/district_vs_price_3.png" width="49%" alt="Most expensive and affordable districts">
+</p>
+
+<p align="center">
+ <img src="graphs/readme_graphs/year_and_price.png" width="80%" alt="Year vs price">
+</p>
 
 <table style="width:100%; border:none;">
   <tr>
