@@ -204,11 +204,18 @@ The repository includes visualizations such as:
 ![Distribution of apartments built during Communism - West vs East](graphs/readme_graphs/east_vs_west.png)
 ![Distributions of apartments based on the number of rooms through the decades](graphs/readme_graphs/num_of_rooms_vs_decade.png)
 
-<h2 align="center"> Model Insights </h2>
+<h2 align="center"> Model Insights and performance </h2>
 
 <p align="center">
-  <img src="graphs/graph11.png" width="49%" alt="Feature importance">
-  <img src="graphs/graph12.png" width="49%" alt="SHAP waterfall plot">
+  <img src="graphs/readme_graphs/shap_values.png" width="49%" alt="SHAP values">
+  <img src="graphs/readme_graphs/partial_dependence.png" width="49%" alt="Partial dependence of area to predictied value">
+</p>
+
+![Radar chart of performance for the most important models](graphs/readme_graphs/radar_chart.png)
+
+<p align="center">
+  <img src="graphs/readme_graphs/error_distribution.png" width="49%" alt="Error distribution">
+  <img src="graphs/readme_graphs/error_by_district.png" width="49%" alt="MAE error and bias by district">
 </p>
 
 ## Legal & ethical considerations
