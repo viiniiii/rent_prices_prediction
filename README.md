@@ -191,33 +191,18 @@ The repository includes visualizations such as:
  <img src="graphs/readme_graphs/year_and_price.png" width="80%" alt="Year vs price">
 </p>
 
-<table style="width:100%; border:none;">
-  <tr>
-    <td rowspan="2" style="width:50%; border:none;">
-      <img src="graphs/graph4.png" width="100%">
-    </td>
-    <td style="border:none;">
-      <img src="graphs/graph5.png" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td style="border:none;">
-      <img src="graphs/graph6.png" width="100%">
-    </td>
-  </tr>
-</table>
-
-<h2 align="center"> Historical & Geographic Analysis </h2>
-
-![Distribution of apartments built during Communism - West vs East](graphs/graph7.png)
-![Distribution of prices - Berlin split based on distance to the center](graphs/graph8.png)
-
 <h2 align="center"> Correlation Analysis </h2>
 
 <p align="center">
-  <img src="graphs/graph9.png" width="49%" alt="Matrix of correlation between variables">
-  <img src="graphs/graph10.png" width="49%" alt="Matrix of correlation between variables">
+  <img src="graphs/readme_graphs/correlations_matrix.png" width="49%" alt="Matrix of correlation between variables">
+  <img src="graphs/readme_graphs/scatterplot.png" width="49%" alt="Scatterplot matrix of correlation between variables">
 </p>
+
+<h2 align="center"> Historical & Geographic Analysis </h2>
+
+![Prices per meter square for each district of Berlin](graphs/readme_graphs/berlins_map.png)
+![Distribution of apartments built during Communism - West vs East](graphs/readme_graphs/east_vs_west.png)
+![Distributions of apartments based on the number of rooms through the decades](graphs/readme_graphs/num_of_rooms_vs_decade.png)
 
 <h2 align="center"> Model Insights </h2>
 
