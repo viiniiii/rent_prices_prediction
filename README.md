@@ -59,17 +59,22 @@ Training strategy:
 - Hyperparameter tuning: Grid Search
 - Feature-ablation experiments: all features / −2 features / −7 features
 
-### Model Performance (5 best models)
+### Model Performance
 
 Metrics: RMSE, R²
 
-| Model            | RMSE   | R²     |
-| ---------------- | ------ | ------ |
-| XGBoost          | 190.97 | 0.9323 |
-| Random Forest    | 214.55 | 0.9146 |
-| Neural Network   | 222.38 | 0.9082 |
-| SVR              | 312.89 | 0.8184 |
-| Ridge Regression | 334.63 | 0.7923 |
+| Model                                            |  RMSE  |   R²   |    
+| -------------------------------------------------| ------ | ------ |
+| XGBoost (without 7 least important featres)      | 177.29 | 0.9398 | 
+| XGBoost                                          | 184.13 | 0.9350 |
+| Random Forest (without 7 least important featres)| 204.44 | 0.9199 |
+| Random Forest (no bathtub/terrasse)              | 206.31 | 0.9184 |
+| Random Forest                                    | 209.19 | 0.9161 |  
+| Neural Network                                   | 221.42 | 0.9061 |
+| Neural Network (no bathtub/terrasse)             | 222.38 | 0.9051 | 
+| KNN                                              | 265.52 | 0.8649 |                                           
+| SVR                                              | 408.33 | 0.6806 | 
+| Linear Regression                                | 408.98 | 0.6796 |      
 
 > **Final model choice:** Random Forest (200 estimators, depth 40).
 > XGBoost had a slightly higher R², but XGBoost Quantile Regression performed poorly and standard XGBoost does not provide a native uncertainty estimate. Random Forest natively provides tree-disagreement–based uncertainty, which was a project requirement. The small accuracy trade-off was accepted in exchange for usable confidence estimates.
