@@ -159,6 +159,13 @@ The repository includes visualizations such as:
 - Interactive Berlin choropleth map (price per m² by ZIP)
 - Interactive scatterplot matrix and dashboard views
 
+<h2 align="center"> Feature Analysis Analysis </h2>
+
+<p align="center">
+  <img src="graphs/readme_graphs/year_built_count.png" width="49%" alt="District distribution histogram">
+  <img src="graphs/readme_graphs/number_of_floors.png" width="49%" alt="Rent price distribution histogram">
+</p>
+
 <p align="center">
   <img src="graphs/graph1.png" width="49%" alt="District distribution histogram">
   <img src="graphs/graph2.png" width="49%" alt="Rent price distribution histogram">
