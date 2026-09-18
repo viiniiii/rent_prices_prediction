@@ -162,13 +162,13 @@ The repository includes visualizations such as:
 <h2 align="center"> Feature Analysis Analysis </h2>
 
 <p align="center">
-  <img src="graphs/readme_graphs/year_built_count.png" width="49%" alt="District distribution histogram">
-  <img src="graphs/readme_graphs/number_of_floors.png" width="49%" alt="Rent price distribution histogram">
+  <img src="graphs/readme_graphs/price_distribution.png" width="49%" alt="District distribution histogram">
+  <img src="graphs/readme_graphs/district_distribution.png" width="49%" alt="Rent price distribution histogram">
 </p>
 
 <p align="center">
-  <img src="graphs/graph1.png" width="49%" alt="District distribution histogram">
-  <img src="graphs/graph2.png" width="49%" alt="Rent price distribution histogram">
+  <img src="graphs/readme_graphs/year_built_count.png" width="49%" alt="District distribution histogram">
+  <img src="graphs/readme_graphs/number_of_floors.png" width="49%" alt="Rent price distribution histogram">
 </p>
 
 <p align="center">
