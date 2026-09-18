@@ -124,30 +124,26 @@ A model card for the final Random Forest is included in the repository (see `mod
 
 Apartment features:
 
-- Size: 83.3 m²
-- Rooms: 4
+- Size: 87.8 m²
+- Rooms: 3
 - Floor: 1
 - Availability: immediately
-- District: Friedrichsfelde, Berlin
-- Amenities: built-in kitchen, bathtub, shower
-- Balcony: No (per listing)
-- Terrace: No
-- Garden: No
-- Parking: No
-- Basement: No
+- District: Lichtenberg, Berlin
+- Built-in kitchen: Yes
+- Bathtub: Yes
+- Shower: Yes
 - Elevator: Yes
-- Barrier-free: Yes
-- Flooring: Unknown
-- Energy source: District heating
+- Flooring: Vinyl
+- Energy source: Other
 - Heating: Underfloor heating
 - Property condition: New / first occupancy
 - Year built: 2025
 
 Prediction:
 
-- Predicted cold rent: ≈1,917 €
-- Actual rent: 1,990 €
-- Error: ≈73 €
+- Predicted cold rent: ≈1,793 €
+- Actual rent: 1,799 €
+- Error: ≈6 €
 
 ### Visual Highlights
 
