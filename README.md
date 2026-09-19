@@ -14,12 +14,12 @@ The resulting dataset supports building and evaluating ML models that estimate r
 ### Dataset
 
 - Total scraped listings: 22,687
-- Listings after cleaning: 15,601
+- Listings after cleaning: 15,588
 - Data source: Immowelt
 - Scraping period: 28/12/2025 – 31/01/2026
 - Raw features collected: 29
-- Final model features: 22
-- Missing data handled using: median / category-specific rules (see cleaning notebook)
+- Final model features: 15
+- Missing data handled using: category-specific rules (see cleaning notebook)
 - Duplicate listings removed: yes – similarity method
 - **K-anonymity generalization** applied to location-related features before any publication; `location` and `listing_url` were dropped from the modeling dataset to reduce re-identification risk.
 
@@ -27,7 +27,7 @@ The resulting dataset supports building and evaluating ML models that estimate r
 
 - Categorical encoding: one-hot encoding
 - Numerical preprocessing: standard scaling
-- Final training dataset shape: (15601, 93)
+- Final dataset samples: 12470 samples for training and 3118 for testing.
 
 ### Exploratory Data Analysis – key findings
 
@@ -45,11 +45,9 @@ The resulting dataset supports building and evaluating ML models that estimate r
 The following regression models were implemented and compared:
 
 - Linear Regression
-- Ridge Regression
-- KNeighborsRegressor
+- KNN Regressor
 - Support Vector Regressor
 - Random Forest Regressor
-- Gradient Boosting
 - XGBoost
 - Neural Network
 
@@ -112,13 +110,13 @@ A model card for the final Random Forest is included in the repository (see `mod
 
 - Rent increases by approximately 15.23 € per additional m².
 - Apartments with elevator, parking, or built-in kitchen show higher average rent.
-- Newer buildings command higher rents.
 - Districts such as Nikolassee, Grünau, Mitte, Bohnsdorf, and Siemensstadt have significantly higher rent levels.
 - Price per m² ranking differs: Oberschöneweide, Blankenburg, Mitte, Dahlem, and Friedenau lead.
 - During the Cold War, West Berlin saw significantly more construction than East Berlin.
 - No significant price difference between West and East Berlin overall; East Berlin slightly overtakes the West on price per m².
 - Split into four regions, the West is the most expensive, followed by the South; North and East are cheaper.
 - Splitting by distance to the center: central areas are most expensive; surrounding areas cheaper than suburban areas (likely noise / new construction effect).
+- Some features such as wooden floor, hybrid energy source, new or renovated properies are associated with higher prices while unknown values tend to have lower rent prices.
 
 ### Example Prediction
 
@@ -222,7 +220,7 @@ The repository includes visualizations such as:
 ## Legal & ethical considerations
 
 Since the website does not provide any APIs to access the data, a scraping script was necessary. While writing the script, every aspect of legal considerations in Germany, such as GDPR, was considered. Personal data such as phone numbers and other data of the person or company who posted the listing were not scraped. These data are sensitive and not needed for the model. A derived variable such as whether the poster is the owner or a real estate agency might correlate with price, but it would require sensitive data and is hard to determine.
-The scraped data is publicly available, and this project has no commercial application – it is a personal project for learning and demonstration purposes.
+The scraped data is publicly available and this project has no commercial application – it is a personal project for learning and demonstration purposes.
 Content protected by copyright such as articles and images was not scraped.
 Security-bypassing mechanisms and other harmful or forbidden mechanisms were not implemented.
 
@@ -233,8 +231,8 @@ Security-bypassing mechanisms and other harmful or forbidden mechanisms were not
 
 - **PII:** No names, phone numbers, or poster identities were collected. Full location was collected but generalized via k-anonymity before any publication scenario.
 - **Quasi-identifiers:** ZIP code and district are quasi-identifiers; they are kept in the working dataset but would be removed or generalized before public release.
-- **Bias review:** Historical, population, self-selection, social, temporal, measurement, representation, aggregation, sampling, and evaluation biases were considered. See the dedicated ethics section / notebook for the full discussion.
-- **Fairness:** No protected attributes are present in the dataset; group fairness, equalized odds, and calibration-based tests are therefore not directly applicable. This limitation is documented.
+- **Bias review:** Historical, population, self-selection, social, temporal, measurement, representation, aggregation, sampling, and evaluation biases were considered. See the final report ethics section for the full discussion.
+- **Fairness:** No protected attributes are present in the dataset.
 - **Temporal limitation:** The data is a single scraping window (28/12/2025 – 31/01/2026), so the project could not be treated as a time series.
 
 ## Data collection
