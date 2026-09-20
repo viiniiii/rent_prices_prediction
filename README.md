@@ -2,6 +2,10 @@
 
 https://berlin-rent-price-evaluation.streamlit.app/
 
+## Final report
+
+Read the Full Project Report (PDF)
+
 ## Project description & motivation
 
 The goal of this project is to develop a machine learning model that predicts Berlin apartment rent prices (Kaltmiete) from real estate listing data.
