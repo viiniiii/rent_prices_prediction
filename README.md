@@ -4,7 +4,7 @@ https://berlin-rent-price-evaluation.streamlit.app/
 
 ## Final report
 
-Read the Full Project Report (PDF)
+[**Read the Full Project Report (PDF)**](https://github.com/viiniiii/rent_prices_prediction/blob/main/report.pdf)
 
 ## Project description & motivation
 
