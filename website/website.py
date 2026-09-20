@@ -1,3 +1,4 @@
+import os
 import datetime
 import base64
 import json
@@ -12,7 +13,6 @@ import matplotlib.pyplot as plt
 
 
 # Page configuration
-
 st.set_page_config(
     page_title="Berlin Rent Price Predictor",
     layout="wide",
@@ -256,7 +256,9 @@ def render_overview():
         with st.expander(f"**{term}**"):
             st.markdown(definition)
 
-DATA_FILE = "rent_listings_final.csv"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "rent_listings_final.csv")
 BERLIN_PLZ_SHAPEFILE_URL = (
     "https://raw.githubusercontent.com/funkeinteraktiv/Berlin-Geodaten/"
     "master/berlin_postleitzahlen.zip"
@@ -530,8 +532,8 @@ def render_explore_page():
 
 # Model loading + inference helpers
 
-MODEL_PATH = "final_model.joblib"
-MODEL_CARD_PATH = "model_card.pdf"
+MODEL_PATH = os.path.join(BASE_DIR, "final_model.joblib")
+MODEL_CARD_PATH = os.path.join(BASE_DIR, "model_card.pdf")
 
 
 @st.cache_resource
@@ -623,7 +625,7 @@ def render_model_page():
         st.error(
             f"Couldn't find a trained model at `{MODEL_PATH}`. "
             "Run this app from the same folder the notebooks expect "
-            "(`final_model.pkl` should be reachable at that relative path)."
+            "(`final_model.joblib` should be reachable at that relative path)."
         )
         st.stop()
 
@@ -774,6 +776,11 @@ FREE_FROM_LABELS = {
     "unknown": "Not specified",
 }
 
+# The model was trained on raw floor codes ("-1", "0", "1" ... "11", where "11"
+# groups everything from the 11th floor up). The dropdown needs human-friendly
+# labels for the edge cases, but must map back to those exact codes before the
+# listing is handed to the pipeline -- otherwise "Basement (-1)", "Ground floor
+# (0)" and "11+" would be sent to the encoder as unrecognized category strings.
 FLOOR_CODES = ["-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 FLOOR_CODE_LABELS = {
     "-1": "Basement (-1)",
@@ -924,7 +931,6 @@ def render_predict_page():
             data=X_processed[0],
             feature_names=feature_names,
         )
-
         fig_waterfall = plt.figure()
         shap.plots.waterfall(exp, show=False)
         st.pyplot(fig_waterfall, clear_figure=True)
